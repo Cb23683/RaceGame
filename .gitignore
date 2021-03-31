@@ -59,7 +59,3 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Custom ignores
-
-Assets/Aduio/
-Assets/Models/
-Assets/Graphics/
