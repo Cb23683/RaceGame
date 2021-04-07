@@ -59,4 +59,4 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Custom ignores
-/Assets/Materials
+/Assets/Materials/
