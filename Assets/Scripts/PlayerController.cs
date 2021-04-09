@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     private InputHandler inputHandler;
-    private Rigidbody rb;
+    public CharacterController controller;
     public TMP_Text scoreTxt;
 
 
@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
         inputHandler = InputHandler.instance;
     }
 
@@ -27,8 +27,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector3 movement = new Vector3(inputHandler.move.x, 0, inputHandler.move.y);
-        rb.AddForce(movement * speed);
+        Vector3 movement = new Vector3(0, 0, inputHandler.move.y);
+        controller.Move(movement * speed);
     }
 
     private void OnTriggerEnter(Collider other)

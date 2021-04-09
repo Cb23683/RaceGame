@@ -59,4 +59,16 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Custom ignores
-/Assets/Materials/
+/Assets/Graphics/
+/Assets/Audio/
+/Assets/Cars/
+/Assets/DinoFracture/
+/Assets/Plugins/
+/Assets/TextMesh Pro/
+
+#Ignore relevant META files
+
+/Assets/Audio.meta
+/Assets/Cars/ARCADE - FREE Racing Car.meta
+/Assets/Graphics.meta
+
