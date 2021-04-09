@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 1092440019}
   - component: {fileID: 1092440024}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreTxt: {fileID: 0}
-  speed: 0
+  speed: 5
   score: 0
 --- !u!135 &1092440020
 SphereCollider:

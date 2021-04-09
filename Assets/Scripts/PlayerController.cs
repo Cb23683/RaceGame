@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public TMP_Text scoreTxt;
 
 
-    public float speed;
+    public float speed = 5;
     public int score = 0;
 
 
