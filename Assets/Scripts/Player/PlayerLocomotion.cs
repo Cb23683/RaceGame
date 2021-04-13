@@ -32,12 +32,13 @@ public class PlayerLocomotion : MonoBehaviour
 
     private void HandleMovement(float delta)
     {
-        Vector3 movement = new Vector3(input.move.x, 0, input.move.y);
+        Vector3 movement = new Vector3(0, 0, input.move.y);
         Debug.Log(movement);
 
         // controller.Move(movement * speed * delta);
-       // rb.AddForce(movement * speed * delta, ForceMode.VelocityChange);
-        rb.MovePosition(transform.position + movement);
+        //rb.MovePosition(transform.position + movement);
+        rb.AddForce(0, 0, 0);
+        
 
     }
 
