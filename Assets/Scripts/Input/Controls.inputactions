@@ -2,13 +2,21 @@
     "name": "Controls",
     "maps": [
         {
-            "name": "Movement",
-            "id": "902bb9ef-a771-4f28-a934-176935b48a3d",
+            "name": "Locomotion",
+            "id": "735d8145-2689-43bd-8460-6df9e6ded16d",
             "actions": [
                 {
                     "name": "Move",
                     "type": "PassThrough",
-                    "id": "5103cb4d-41f4-41ad-8108-a7617a81ea5d",
+                    "id": "29defe39-6c6f-4299-a8ca-62b5b27558b2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Look",
+                    "type": "PassThrough",
+                    "id": "60f96944-7bdb-45c1-982d-14e975f040e8",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
@@ -16,8 +24,8 @@
             ],
             "bindings": [
                 {
-                    "name": "WASD",
-                    "id": "68e29ad2-5d15-47d2-9201-3a3a1a2f0050",
+                    "name": "2D Vector",
+                    "id": "dfa94870-c547-4cc5-8b6b-7abc7ed19d91",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -28,7 +36,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "b19a2314-a3a4-497d-97f4-32ba87ecaf90",
+                    "id": "12357c20-002a-4b97-9b74-8e15f2ee29e8",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -39,7 +47,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "d024c6b7-ab4b-47a0-a1cd-58847105e263",
+                    "id": "e625f1e2-fad2-45ca-89fb-1eb6c1f585b2",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -50,7 +58,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "0b0c489e-a8e8-4533-9ce9-8abe8396373b",
+                    "id": "aac17401-4b54-402e-a07c-477eb2763ebf",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -61,7 +69,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "6dc6706a-b898-4f26-807c-f9dcf7ee63b9",
+                    "id": "e2a8fada-ed24-47d1-bcaa-d343274d83b7",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -69,6 +77,17 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "58aa6c12-e3bc-45f7-8e5e-daac14201881",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
