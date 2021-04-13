@@ -6,12 +6,12 @@ public class PlayerLocomotion : MonoBehaviour
 {
     private InputManager input;
     private CharacterController controller;
-    private AnimatorHandler animatorHandler;
+    private Rigidbody rb;
 
     public Transform camParent;
     public Transform cam;
 
-    public float speed = 5f;
+    public float speed = 10f;
     public float rotationSpeed = 10f;
 
 
@@ -19,28 +19,26 @@ public class PlayerLocomotion : MonoBehaviour
     {
         input = InputManager.instance;
         controller = GetComponent<CharacterController>();
-        animatorHandler = GetComponent<AnimatorHandler>();
-
-        animatorHandler.Initialize();
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
         HandleMovement(Time.deltaTime);
 
-        if (animatorHandler.canRotate)
-        {
-            HandleRotation(Time.deltaTime);
-        }
-
-        animatorHandler.UpdateAnimatorValues(input.moveAmount, 0);
+    
+        HandleRotation(Time.deltaTime);
     }
 
     private void HandleMovement(float delta)
     {
-        Vector3 movement = (input.move.x * camParent.right) + (input.move.y * camParent.forward);
+        Vector3 movement = new Vector3(input.move.x, 0, input.move.y);
+        Debug.Log(movement);
 
-        controller.Move(movement * speed * delta);
+        // controller.Move(movement * speed * delta);
+       // rb.AddForce(movement * speed * delta, ForceMode.VelocityChange);
+        rb.MovePosition(transform.position + movement);
+
     }
 
     private void HandleRotation(float delta)
