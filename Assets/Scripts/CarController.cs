@@ -10,10 +10,17 @@ public class CarController : MonoBehaviour
 
     public Rigidbody sphereRB;
     private InputManager input;
-    public float moveInput;
+    private float moveInput;
+    private float turnInput;
+    private bool isCarGrounded;
+
+    public float airDrag;
+    public float groundDrag;
 
     public float fwdSpeed;
     public float revSpeed;
+    public float turnSpeed;
+    public LayerMask groundLayer;
 
 
 
@@ -29,15 +36,50 @@ public class CarController : MonoBehaviour
     void Update()
     {
         moveInput = input.move.y;
+        turnInput = input.move.x;
+
+        // adjust speed for car
         moveInput *= fwdSpeed > 0 ? fwdSpeed : revSpeed;
 
         
         // set cars position to sphere
         transform.position = sphereRB.transform.position;
+
+        // set rotation
+        float newRotation = turnInput * turnSpeed * Time.deltaTime * input.move.y;
+        transform.Rotate(0, newRotation, 0, Space.World);
+
+        //raycast ground check
+        RaycastHit hit;
+        isCarGrounded = Physics.Raycast(transform.position, -transform.up, out hit, 1f, groundLayer);
+
+        // rotate car to be parallel to ground
+        transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+
+        if (isCarGrounded)
+        {
+            sphereRB.drag = groundDrag;
+        }
+        else
+        {
+            sphereRB.drag = airDrag;
+        }
     }
+
+
 
     private void FixedUpdate()
     {
-        sphereRB.AddForce(transform.forward * moveInput, ForceMode.Acceleration);
+        if (isCarGrounded)
+        {
+            //move car
+            sphereRB.AddForce(transform.forward * moveInput, ForceMode.Acceleration);
+        }
+        else
+        {
+            //add extra gravity
+            sphereRB.AddForce(transform.up * -30f);
+        }
+       
     }
 }
