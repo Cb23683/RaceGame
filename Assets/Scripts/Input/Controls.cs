@@ -92,8 +92,142 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""2cc0de1d-1a11-4309-b27d-8fb215593924"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""1c1c5a55-ec70-4780-a7d4-c614028fa657"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e43908dc-0632-4066-82f5-c31d87e098b1"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""0975ce2a-8352-4e51-80d3-fbd59e7e6311"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""aeef0f4b-5307-44fc-ac43-27d7614c82b4"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
+        },
+        {
+            ""name"": ""Locomotion2"",
+            ""id"": ""91aea188-fd02-4df8-afe4-90a403ecad72"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""7d443861-feca-47ad-b36e-48a1c0249726"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""d5a5c11f-d68c-4f2d-9056-e3d12ae72bf5"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""a90928ad-6700-4cd4-bcb5-07f9d1f99f87"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""2274371a-2579-4701-9c47-d3596893554b"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""321fccdf-45e3-4b08-8737-20e1ac2d8da2"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ff2b3341-6930-49ae-9991-39521dc925b3"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2a6b9a94-4b3a-4059-b2d2-7899afa0736a"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
-                    ""id"": ""58aa6c12-e3bc-45f7-8e5e-daac14201881"",
+                    ""id"": ""f07538cb-7425-4b0a-a1b3-e258dcafcbfb"",
                     ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -111,6 +245,10 @@ public class @Controls : IInputActionCollection, IDisposable
         m_Locomotion = asset.FindActionMap("Locomotion", throwIfNotFound: true);
         m_Locomotion_Move = m_Locomotion.FindAction("Move", throwIfNotFound: true);
         m_Locomotion_Look = m_Locomotion.FindAction("Look", throwIfNotFound: true);
+        // Locomotion2
+        m_Locomotion2 = asset.FindActionMap("Locomotion2", throwIfNotFound: true);
+        m_Locomotion2_Move = m_Locomotion2.FindAction("Move", throwIfNotFound: true);
+        m_Locomotion2_Look = m_Locomotion2.FindAction("Look", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -197,7 +335,53 @@ public class @Controls : IInputActionCollection, IDisposable
         }
     }
     public LocomotionActions @Locomotion => new LocomotionActions(this);
+
+    // Locomotion2
+    private readonly InputActionMap m_Locomotion2;
+    private ILocomotion2Actions m_Locomotion2ActionsCallbackInterface;
+    private readonly InputAction m_Locomotion2_Move;
+    private readonly InputAction m_Locomotion2_Look;
+    public struct Locomotion2Actions
+    {
+        private @Controls m_Wrapper;
+        public Locomotion2Actions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_Locomotion2_Move;
+        public InputAction @Look => m_Wrapper.m_Locomotion2_Look;
+        public InputActionMap Get() { return m_Wrapper.m_Locomotion2; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Locomotion2Actions set) { return set.Get(); }
+        public void SetCallbacks(ILocomotion2Actions instance)
+        {
+            if (m_Wrapper.m_Locomotion2ActionsCallbackInterface != null)
+            {
+                @Move.started -= m_Wrapper.m_Locomotion2ActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_Locomotion2ActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_Locomotion2ActionsCallbackInterface.OnMove;
+                @Look.started -= m_Wrapper.m_Locomotion2ActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_Locomotion2ActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_Locomotion2ActionsCallbackInterface.OnLook;
+            }
+            m_Wrapper.m_Locomotion2ActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
+            }
+        }
+    }
+    public Locomotion2Actions @Locomotion2 => new Locomotion2Actions(this);
     public interface ILocomotionActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
+    }
+    public interface ILocomotion2Actions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
