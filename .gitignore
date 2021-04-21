@@ -59,3 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Custom ignores
+/Assets/_TerrainAutoUpgrade
+/Assets/Audio
+/Assets/Graphics
+/Assets/Prefabs
