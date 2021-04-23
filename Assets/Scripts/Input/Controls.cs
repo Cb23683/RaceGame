@@ -127,7 +127,7 @@ public class @Controls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""0975ce2a-8352-4e51-80d3-fbd59e7e6311"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -138,7 +138,7 @@ public class @Controls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""aeef0f4b-5307-44fc-ac43-27d7614c82b4"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
