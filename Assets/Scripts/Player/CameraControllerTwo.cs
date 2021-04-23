@@ -35,6 +35,14 @@ public class CameraControllerTwo : MonoBehaviour
 
     private Vector3 camPos;
 
+
+    //Stuff for rotating cam
+    [SerializeField]
+    private Vector3 offsetPosition;
+
+    private Space offsetPositionSpace = Space.Self;
+    private bool lookAt = true;
+
     private void Awake()
     {
         defaultLength = camTransform.localPosition.z;
@@ -67,6 +75,7 @@ public class CameraControllerTwo : MonoBehaviour
 
     private void HandleRotation(float delta)
     {
+
         float mouseX = input.look2.x;
         float mouseY = input.look2.y;
 
