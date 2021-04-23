@@ -65,10 +65,13 @@ crashlytics-build.properties
 /Assets/DinoFracture/
 /Assets/Plugins/
 /Assets/TextMesh Pro/
-
 #Ignore relevant META files
+
 
 /Assets/Audio.meta
 /Assets/Cars/ARCADE - FREE Racing Car.meta
 /Assets/Graphics.meta
 
+
+/Assets/_TerrainAutoUpgrade
+/Assets/Prefabs
