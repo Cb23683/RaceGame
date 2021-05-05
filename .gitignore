@@ -61,7 +61,6 @@ crashlytics-build.properties
 # Custom ignores
 /Assets/Graphics/
 /Assets/Audio/
-/Assets/Cars/
 /Assets/DinoFracture/
 /Assets/Plugins/
 /Assets/TextMesh Pro/
@@ -69,7 +68,6 @@ crashlytics-build.properties
 
 
 /Assets/Audio.meta
-/Assets/Cars/ARCADE - FREE Racing Car.meta
 /Assets/Graphics.meta
 
 
