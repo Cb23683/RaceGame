@@ -59,6 +59,16 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Custom ignores
-Assets/Graphics/
-Assets/Audio/
-Assets/DinoFracture
+/Assets/Graphics/
+/Assets/Audio/
+/Assets/DinoFracture/
+/Assets/Plugins/
+/Assets/TextMesh Pro/
+#Ignore relevant META files
+
+
+/Assets/Audio.meta
+/Assets/Graphics.meta
+
+
+/Assets/_TerrainAutoUpgrade
