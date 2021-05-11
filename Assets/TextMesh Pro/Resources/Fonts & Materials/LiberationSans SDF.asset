@@ -25,6 +25,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ColorMask: 15
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+    - _CullMode: 0
+>>>>>>> Stashed changes
+>>>>>>> Easton
     - _FaceDilate: 0
     - _GradientScale: 10
     - _MaskSoftnessX: 0
@@ -56,7 +63,15 @@ Material:
     - _WeightNormal: 0
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+<<<<<<< HEAD
     - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+<<<<<<< Updated upstream
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+=======
+    - _FaceColor: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> Stashed changes
+>>>>>>> Easton
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
 --- !u!114 &11400000
@@ -73,7 +88,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hashCode: 231247347
   material: {fileID: 2180264}
+<<<<<<< HEAD
   materialHashCode: -1183942120
+=======
+<<<<<<< Updated upstream
+  materialHashCode: -1183942120
+=======
+  materialHashCode: 198912371
+>>>>>>> Stashed changes
+>>>>>>> Easton
   m_Version: 1.1.0
   m_SourceFontFileGUID: e3265ab4bf004d28a9537516768c1c75
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75,
@@ -4605,6 +4628,13 @@ MonoBehaviour:
   m_AtlasTextures:
   - {fileID: 28684132378477856}
   m_AtlasTextureIndex: 0
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+  m_IsMultiAtlasTexturesEnabled: 0
+>>>>>>> Stashed changes
+>>>>>>> Easton
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0
@@ -7798,6 +7828,14 @@ Texture2D:
   m_TextureFormat: 1
   m_MipCount: 1
   m_IsReadable: 0
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+  m_IgnoreMasterTextureLimit: 0
+  m_IsPreProcessed: 0
+>>>>>>> Stashed changes
+>>>>>>> Easton
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: -92
   m_AlphaIsTransparency: 0
