@@ -20,6 +20,7 @@ public class InputManager : MonoBehaviour
     public float moveAmount { get; private set; }
     public float moveAmount2 { get; private set; }
 
+
     void Awake()
     {
         if(instance != null)

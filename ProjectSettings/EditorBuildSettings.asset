@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/MenuScene.unity
     guid: caa4092a5853a0b4cb4d750783c1f0e5
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/_Clayton.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/_Scenes/Track 1 - City.unity
+    guid: 0e67a46532f397648aa7a895987c0349
+  - enabled: 1
+    path: Assets/_Scenes/Figure8.unity
+    guid: 5679a8ef3837c8a4f9db21f5d641ee2d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f667343edb4837245aae38ff17b6e653,
       type: 2}
